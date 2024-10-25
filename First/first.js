@@ -23,7 +23,27 @@
 // let x = null;
 // let y = x ?? 5;
 // console.log(y);
-
+// ...................
+//  JavaScript uses prototypes to implement inheritance
+// function Person(name) {
+//     this.name = name;
+//   }
+  
+//   Person.prototype.sayHi = function() {
+//     console.log('Hi, I am ' + this.name);
+//   };
+  
+//   let person = new Person('Tom');
+//   person.sayHi();
+//   ...............
+// async await
+// async function fetchData() {
+//     let result = await fetch('linkkkk');
+//     let data = await result.json();
+//     console.log(data);
+//   }
+//   fetchData();
+  
 
 
 /////////////////...

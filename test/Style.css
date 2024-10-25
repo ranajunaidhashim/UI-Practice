@@ -1,17 +1,154 @@
-*{
+:root {
+    --bg-yellow: linear-gradient(to right, #eb6510, #ffc124);
+    --bg-blue: linear-gradient(to right, #003bd4, #1ca3ff);
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
-  }
-.container > img{
-margin-right: 20px;
+}
+
+.container>img {
+    margin-right: 20px;
 }
 
 .carousel-item img {
     /* height: auto; */
-    max-height: 500px; 
-    object-fit: cover; 
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.stopcont {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.stopwatch-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.time-display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btnstop {
+    /* font-size: 1.2rem; */
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    /* outline: none; */
+}
+
+.btnstop:hover {
+    background-color: #0057b3de;
+}
+
+.btnstop:active {
+    background-color: #002244;
+}
+
+.spd {
+    background: var(--bg-yellow);
+    color: transparent;
+    background-clip: text;
+    /* display: inline-block; */
+    font-weight: bold;
+}
+
+.spdstop {
+    background: var(--bg-blue);
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.textUnderline {
+    position: relative;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.textUnderline::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -5px;
+    /* top: 10px; */
+    left: 0;
+    height: 2px;
+    background: var(--bg-blue);
+}
+
+/* ---------- footer pehle */
+footer {
+    /* background-color: #333333c5; */
+    /* color: #fff; */
+    text-align: center;
+    height: 8vh;
+    padding: 20px 0;
+    position: relative;
   }
+  
+footer ::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    top: 0px;
+    /* top: 10px; */
+    right: 0;
+    height: 3px;
+    background: var(--bg-yellow);
+}
+ 
+footer ::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    top: 0px;
+    left: 0;
+    /* top: 10px; */
+    height: 3px;
+    background: var(--bg-blue);
+}
+  
+   footer :first-child {
+    background:var(--bg-blue);
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+  } 
+   footer :last-child {
+    background:var(--bg-yellow);
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+  } 
+ 
+/* ---------weather  */
+
+.weatherCont{
+    /* min-height: 92vh; */
+    min-height: 100vh;
+}
+
